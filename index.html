@@ -1,7 +1,30 @@
+<style>
+        #yenileButton {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #yenileButton:hover {
+            background-color: darkred;
+        }
+    </style>
+
+    <button id="yenileButton">Yayın Akışı Eskiyse, Yayınlar Açılmıyorsa Bu Butona Tıklayın Yada F5 Yapın!</button>
+    
+    <script>
+        document.getElementById("yenileButton").addEventListener("click", function() {
+            location.reload();
+        });
+    </script>
 <a href="https://sites.google.com/view/iptvold/" target="_blank">
 
     <img src="/iptv.jpg" width="100%" alt="iptv satın al"></a>
     
+<div style="display:none">
+<a href="https://iptvold6.pro/" title="Iptv Old">Iptv Old</a></div>
         <section class="yayinAndListe"><div class="yayin" id="yayinSection">
     <iframe id="customIframe" class="player" src="/channel.html?id=yayinstar" style="overflow: hidden; " scrolling="no" width="100%" height="600" frameborder="0" allowfullscreen=""></iframe>
     </div>
