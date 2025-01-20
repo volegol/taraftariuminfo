@@ -19,14 +19,14 @@ if (!self.__WB_pmw) {
 
   (function($) {
     $(window.document).ready(function() {
-      var autoPlay = true,
+      var autoPlay = false,
         chromeless = false,
         skipCounter,
         skipInterval,
         skipOffset,
         skipText;
       if (Clappr.Browser.isMobile) {
-        autoPlay = true;
+        autoPlay = false;
         chromeless = false;
       }
       window.app = {
